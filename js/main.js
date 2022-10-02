@@ -100,7 +100,7 @@ const imageExists = function (url) {
 
     try
     {
-        http.open('HEAD', `https://corsproxy.io/?${url}`, false);
+        http.open('HEAD', url, false);
         // http.setHeader("Access-Control-Allow-Origin", "*");
         // http.setHeader("Access-Control-Allow-Credentials", "true");
         // http.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
