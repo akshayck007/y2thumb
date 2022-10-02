@@ -1,0 +1,25 @@
+.yt-url {
+    // position: absolute;
+    top: 50%;
+    text-align: center;
+    border: none;
+    border-radius: 10rem 0 0 10rem;
+    margin-right: 2rem;
+    width: 50rem;
+    padding-left: 2rem;
+    transition: all 0.2s;
+
+    @media (max-width:800px) {
+        border-radius: 10rem 10rem;
+
+    }
+
+    &:hover {
+        box-shadow: inset 3px 3px 10px rgba($color-black, 0.2);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: inset 3px 3px 10px rgba($color-black, 0.4);
+    }
+}

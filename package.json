@@ -1,0 +1,14 @@
+{
+  "name": "y2thumb.tk",
+  "version": "1.0.0",
+  "description": "webapp for downloading youtube video thumbnails",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "author": "FranklinRichards",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

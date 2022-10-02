@@ -1,0 +1,25 @@
+.btns-download-set {
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    left: 63%;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: moveInRight 0.5s ease;
+
+    @media(max-width:800px) {
+        // left: 50%;
+        // transform: translateX(-50%);
+        // transform: translateY(80%);
+        height: 20rem;
+        display: inline-block;
+        left: 30%;
+        width: 20rem;
+        padding-left: 0;
+        top: 60%;
+
+    }
+
+}

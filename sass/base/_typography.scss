@@ -1,0 +1,39 @@
+body {
+    font-weight: 400;
+    font-family: Lato, sans-serif;
+    color: $light-grey;
+    line-height: 1.7rem;
+}
+
+.heading-primary {
+    color: $color-r;
+
+    &--main {
+        display: block;
+        font-size: 5rem;
+
+        .n2 {
+            color: $color-white;
+        }
+
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    &--sub {
+        display: inline-block;
+        font: 1.8rem;
+        color: $color-white;
+        line-height: 2.5rem;
+    }
+}
+
+.errDia {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-r;
+    font-size: 1.5rem;
+
+}

@@ -1,0 +1,99 @@
+.section-url {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -18vh;
+    background-color: $color-primary;
+    border-radius: 10rem 10rem 0 0;
+
+    @media (max-width:800px) {
+
+        border-radius: 8rem 8rem 0 0;
+
+    }
+
+
+
+    .url-box {
+        position: absolute;
+        top: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        @media (max-width:800px) {
+            height: 12rem;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            top: 5%;
+            width: 90%;
+
+        }
+
+        .yt-url {
+            @media (max-width:800px) {
+                width: 80%;
+                height: 4rem;
+            }
+        }
+
+        .get-thumb {
+            @media (max-width:800px) {
+                height: 3.5rem;
+                width: 10rem;
+                border-radius: 10rem 10rem;
+            }
+
+        }
+    }
+
+
+    .url-info {
+        font-size: 1.7rem;
+        line-height: 3rem;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+        color: $light-grey;
+
+        @media (max-width:800px) {
+            top: 18%;
+
+        }
+
+        @media (max-height:400px) {
+            display: none;
+
+        }
+
+        .lead {
+            color: lighten($light-grey, 15);
+
+            font-weight: 700;
+        }
+
+
+    }
+
+}
+
+.section-download {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 114rem;
+    display: none;
+
+    @media (max-width:800px) {
+        top: 60%;
+        left: 50%;
+        width: 100vw;
+        height: 60rem;
+
+    }
+
+}

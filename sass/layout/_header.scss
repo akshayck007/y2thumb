@@ -1,0 +1,16 @@
+.header {
+    height: 40vh;
+    width: 100vw;
+    background-color: $color-p-dark;
+    position: relative;
+    z-index: -1;
+
+    &__text-box {
+        position: absolute;
+        left: 50%;
+        top: 4%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+}

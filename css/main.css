@@ -1,0 +1,279 @@
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 800px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-weight: 400;
+  font-family: Lato, sans-serif;
+  color: #8c8c8c97;
+  line-height: 1.7rem; }
+
+.heading-primary {
+  color: #df454e; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    .heading-primary--main .n2 {
+      color: #fff; }
+  .heading-primary--sub {
+    display: inline-block;
+    font: 1.8rem;
+    color: #fff;
+    line-height: 2.5rem; }
+
+.errDia {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #df454e;
+  font-size: 1.5rem; }
+
+.float-right {
+  float: right; }
+
+.break {
+  flex-basis: 100%;
+  height: 0; }
+
+.d-ico {
+  padding-left: 1rem; }
+
+.get-thumb {
+  width: 8rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: .3rem;
+  transition: all 0.2s;
+  border-radius: 0 10rem 10rem 0;
+  height: 3rem;
+  border: none;
+  background-color: #2c2c2c;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.05); }
+  .get-thumb:hover {
+    transform: scale(1.08);
+    background-color: #242424;
+    box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.15); }
+  .get-thumb:active {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 2.5rem rgba(255, 255, 255, 0.25); }
+
+.btn-download:link, .btn-download:visited {
+  text-decoration: none;
+  color: #df454e;
+  background-color: #313131;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  width: 17.5rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  border-bottom: 2rem; }
+  @media (max-width: 800px) {
+    .btn-download:link, .btn-download:visited {
+      margin: 1rem 1rem; } }
+
+.btn-download:hover {
+  background-color: #242424;
+  transform: scale(1.08);
+  box-shadow: 0 0 3rem rgba(223, 69, 78, 0.15); }
+
+.btn-download:active {
+  transform: scale(1.05);
+  box-shadow: 0 0 2.5rem rgba(223, 69, 78, 0.25); }
+
+.yt-url {
+  top: 50%;
+  text-align: center;
+  border: none;
+  border-radius: 10rem 0 0 10rem;
+  margin-right: 2rem;
+  width: 50rem;
+  padding-left: 2rem;
+  transition: all 0.2s; }
+  @media (max-width: 800px) {
+    .yt-url {
+      border-radius: 10rem 10rem; } }
+  .yt-url:hover {
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2); }
+  .yt-url:focus {
+    outline: none;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.4); }
+
+.img-composite {
+  transition: all 0.2s;
+  margin-right: 3rem;
+  position: absolute;
+  left: 20%;
+  animation: moveInLeft 0.5s ease; }
+  @media (max-width: 800px) {
+    .img-composite {
+      left: 10%; } }
+  .img-composite:hover {
+    transform: scale(1.02); }
+  .img-composite .img-holder {
+    background-color: #313131;
+    text-align: center;
+    width: 48rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0.2px 0.2px 10px black; }
+    @media (max-width: 800px) {
+      .img-composite .img-holder {
+        margin-top: 10%;
+        width: 80vw; } }
+    .img-composite .img-holder .th-preview {
+      width: 46rem;
+      height: 28rem;
+      border-radius: 2rem;
+      object-fit: contain; }
+      @media (max-width: 800px) {
+        .img-composite .img-holder .th-preview {
+          width: 78vw; } }
+
+.btns-download-set {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  left: 63%;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: moveInRight 0.5s ease; }
+  @media (max-width: 800px) {
+    .btns-download-set {
+      height: 20rem;
+      display: inline-block;
+      left: 30%;
+      width: 20rem;
+      padding-left: 0;
+      top: 60%; } }
+
+.header {
+  height: 40vh;
+  width: 100vw;
+  background-color: #313131;
+  position: relative;
+  z-index: -1; }
+  .header__text-box {
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    transform: translateX(-50%);
+    text-align: center; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row .col-1-of-2 {
+    float: left;
+    width: calc((100% - 6rem) / 2); }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }
+
+.section-url {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -18vh;
+  background-color: #414141;
+  border-radius: 10rem 10rem 0 0; }
+  @media (max-width: 800px) {
+    .section-url {
+      border-radius: 8rem 8rem 0 0; } }
+  .section-url .url-box {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; }
+    @media (max-width: 800px) {
+      .section-url .url-box {
+        height: 12rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 5%;
+        width: 90%; } }
+    @media (max-width: 800px) {
+      .section-url .url-box .yt-url {
+        width: 80%;
+        height: 4rem; } }
+    @media (max-width: 800px) {
+      .section-url .url-box .get-thumb {
+        height: 3.5rem;
+        width: 10rem;
+        border-radius: 10rem 10rem; } }
+  .section-url .url-info {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    color: #8c8c8c97; }
+    @media (max-width: 800px) {
+      .section-url .url-info {
+        top: 18%; } }
+    @media (max-height: 400px) {
+      .section-url .url-info {
+        display: none; } }
+    .section-url .url-info .lead {
+      color: rgba(178, 178, 178, 0.592157);
+      font-weight: 700; }
+
+.section-download {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 114rem;
+  display: none; }
+  @media (max-width: 800px) {
+    .section-download {
+      top: 60%;
+      left: 50%;
+      width: 100vw;
+      height: 60rem; } }

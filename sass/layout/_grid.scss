@@ -1,0 +1,18 @@
+.row {
+    // display: none;
+    max-width: 114rem;
+    margin: 0 auto;
+    @include clearfix;
+
+    .col-1-of-2 {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-hor;
+        }
+
+        width: calc((100% - #{$gutter-hor}) / 2);
+
+
+    }
+}

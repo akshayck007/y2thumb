@@ -1,0 +1,48 @@
+.img-composite {
+    transition: all 0.2s;
+    margin-right: 3rem;
+    position: absolute;
+    left: 20%;
+
+    @media (max-width:800px) {
+        left: 10%;
+
+    }
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    .img-holder {
+
+        background-color: $color-p-dark;
+        text-align: center;
+        width: 48rem;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        box-shadow: 0.2px 0.2px 10px rgba($color-black, 1);
+
+        @media (max-width:800px) {
+            margin-top: 10%;
+            width: 80vw;
+        }
+
+        .th-preview {
+
+            @media (max-width:800px) {
+                width: 78vw;
+            }
+
+            width: 46rem;
+            height: 28rem;
+            border-radius: 2rem;
+            object-fit: contain;
+        }
+    }
+
+    animation: moveInLeft 0.5s ease;
+
+}

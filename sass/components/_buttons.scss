@@ -1,0 +1,60 @@
+.get-thumb {
+    width: 8rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: .3rem;
+    transition: all 0.2s;
+    border-radius: 0 10rem 10rem 0;
+    height: 3rem;
+    border: none;
+    background-color: darken($color-p-dark, 2%);
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-white, 0.05);
+
+    &:hover {
+        transform: scale(1.08);
+        background-color: darken($color-p-dark, 5%);
+        box-shadow: 0 1rem 3rem rgba($color-white, 0.15);
+    }
+
+    &:active {
+        transform: scale(1.05);
+        box-shadow: 0 0.5rem 2.5rem rgba($color-white, 0.25);
+    }
+
+}
+
+.btn-download {
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $color-r;
+        background-color: $color-p-dark;
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        width: 17.5rem;
+        height: 4rem;
+        text-align: center;
+        font-size: 1.6rem;
+        border-radius: 1rem;
+        transition: all 0.2s;
+        border-bottom: 2rem;
+
+        @media (max-width:800px) {
+            margin: 1rem 1rem;
+        }
+
+    }
+
+    &:hover {
+        background-color: darken($color-p-dark, 5%);
+        transform: scale(1.08);
+        box-shadow: 0 0 3rem rgba($color-r, 0.15);
+    }
+
+    &:active {
+        transform: scale(1.05);
+        box-shadow: 0 0 2.5rem rgba($color-r, 0.25);
+    }
+}
