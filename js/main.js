@@ -104,8 +104,7 @@ const imageExists = function (url) {
         // http.setHeader("Access-Control-Allow-Origin", "*");
         // http.setHeader("Access-Control-Allow-Credentials", "true");
         // http.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-        // http.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
-
+        // http.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Authorization, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
 
         http.send();
 
