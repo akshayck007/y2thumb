@@ -18,9 +18,10 @@ const med_button = document.querySelector(".btn-med");
 
 const button_elements = [max_button, high_button, std_button, med_button];
 
+
+
 gt_button.addEventListener('click', function (e) {
     e.preventDefault();
-    gt_button.textContent = "Loading";
     while (img_holder.firstChild)
     {
         img_holder.removeChild(img_holder.lastChild);
@@ -61,11 +62,11 @@ gt_button.addEventListener('click', function (e) {
         yt_img.classList.add('th-preview');
         img_holder.appendChild(yt_img);
         section_download.style.display = "block";
-        gt_button.textContent = "get thumb";
+
     }
     else
     {
-        gt_button.textContent = "get thumb";
+
         const errDia = document.querySelector(".errDia");
         const err = document.createElement('p');
         err.textContent = "Invalid URL";
@@ -100,7 +101,7 @@ const imageExists = function (url) {
 
     try
     {
-        http.open('HEAD', url, false);
+        http.open('HEAD', `https://corsproxy.io/?${url}`, false);
         // http.setHeader("Access-Control-Allow-Origin", "*");
         // http.setHeader("Access-Control-Allow-Credentials", "true");
         // http.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");

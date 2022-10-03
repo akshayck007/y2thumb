@@ -22,4 +22,14 @@
 
     }
 
+    @media (max-height:400px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 18%;
+        left: 10%;
+        width: 75rem;
+        height: 8rem;
+
+    }
+
 }

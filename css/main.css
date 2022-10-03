@@ -71,6 +71,7 @@ body {
 
 .get-thumb {
   width: 8rem;
+  position: relative;
   display: inline-block;
   text-decoration: none;
   padding: .3rem;
@@ -105,6 +106,9 @@ body {
   @media (max-width: 800px) {
     .btn-download:link, .btn-download:visited {
       margin: 1rem 1rem; } }
+  @media (max-height: 400px) {
+    .btn-download:link, .btn-download:visited {
+      box-shadow: 1px 1px 5px black; } }
 
 .btn-download:hover {
   background-color: #242424;
@@ -142,6 +146,9 @@ body {
   @media (max-width: 800px) {
     .img-composite {
       left: 10%; } }
+  @media (max-height: 400px) {
+    .img-composite {
+      margin-top: -14%; } }
   .img-composite:hover {
     transform: scale(1.02); }
   .img-composite .img-holder {
@@ -185,6 +192,14 @@ body {
       width: 20rem;
       padding-left: 0;
       top: 60%; } }
+  @media (max-height: 400px) {
+    .btns-download-set {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 18%;
+      left: 10%;
+      width: 75rem;
+      height: 8rem; } }
 
 .header {
   height: 40vh;
@@ -254,6 +269,15 @@ body {
     text-align: center;
     transform: translateX(-50%);
     color: #8c8c8c97; }
+    .section-url .url-info .how-to {
+      border-radius: 3rem;
+      width: 56rem;
+      height: 31.5rem;
+      box-shadow: 0.2px 0.2px 10px black; }
+      @media (max-width: 800px) {
+        .section-url .url-info .how-to {
+          margin-top: 10%;
+          width: 80vw; } }
     @media (max-width: 800px) {
       .section-url .url-info {
         top: 18%; } }
@@ -277,3 +301,7 @@ body {
       left: 50%;
       width: 100vw;
       height: 60rem; } }
+  @media (max-height: 400px) {
+    .section-download {
+      margin-top: -10%;
+      height: 15rem; } }
