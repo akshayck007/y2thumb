@@ -64,3 +64,17 @@
         box-shadow: 0 0 2.5rem rgba($color-r, 0.25);
     }
 }
+
+.nav-btns {
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: lighten($light-grey, 40%);
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+}

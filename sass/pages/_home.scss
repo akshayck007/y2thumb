@@ -98,7 +98,9 @@
     left: 50%;
     transform: translateX(-50%);
     width: 114rem;
+    height: 114rem;
     display: none;
+
 
     @media (max-width:800px) {
         top: 60%;
