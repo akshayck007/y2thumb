@@ -1,0 +1,38 @@
+.contact-us {
+    position: absolute;
+    background-color: darken($color-p-dark, 10%);
+    padding: 5rem;
+    height: 40rem;
+    width: 40rem;
+    border-radius: 5rem;
+    color: white;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+
+    @media (max-width:800px) {
+        top: 20%;
+    }
+
+    .lead {
+        margin-bottom: -2rem;
+        text-align: center;
+    }
+
+    .ct-close-btn {
+        margin-top: -30%;
+        float: right;
+        width: 1rem;
+    }
+
+    .ct-description {
+        display: inline-block;
+        margin-top: 20%;
+        width: 30rem;
+        text-align: left;
+        line-height: 1.7;
+        font-size: 2.5rem;
+    }
+
+}

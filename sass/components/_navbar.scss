@@ -1,0 +1,73 @@
+.nav-exp-btn {
+
+    color: lighten($light-grey, 50%);
+    position: absolute;
+    right: 10%;
+    font-size: 3.5rem;
+    top: 15%;
+
+    @media (max-width:800px) {
+        font-size: 3rem;
+        top: 30%;
+    }
+
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+
+}
+
+.navbar {
+    .nav-close-btn {
+        font-size: 5rem;
+        position: absolute;
+        right: 17%;
+        color: rgb(151, 151, 151);
+
+        @media (max-width:800px) {
+            right: 10%;
+        }
+
+        &:hover {
+            color: rgb(228, 228, 228);
+
+        }
+    }
+
+    display: none;
+    position: relative;
+    font-size: 3rem;
+    width: 100vw;
+    height: 120vh;
+    z-index: 1100;
+    padding: 10rem;
+    background-color: rgba($color-p-dark, $alpha: 0.2);
+    backdrop-filter: blur(10rem);
+
+
+
+    &__elements {
+        @media (max-width:800px) {
+            top: 15%;
+        }
+
+        left: 50%;
+        transform: translateX(-50%);
+        top: 25%;
+        position: absolute;
+        height: 50rem;
+        width: 40rem;
+        border-radius: 5rem;
+        text-align: center;
+        background-color: darken($color-p-dark, 10%);
+        list-style: none;
+        padding: 10rem;
+
+        &--element {
+            display: block;
+            margin-bottom: 7rem;
+        }
+    }
+}
