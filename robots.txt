@@ -2,5 +2,4 @@ User-agent: *
 Allow: /
 Allow:sitemap.xml
 Allow:sitemap.html
-Disallow: /cgi-bin/
 Sitemap: https://y2thumb.com/sitemap.xml
