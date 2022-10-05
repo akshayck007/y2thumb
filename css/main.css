@@ -28,7 +28,8 @@ html {
       font-size: 50%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #414141; }
 
 body {
   font-weight: 400;
@@ -58,6 +59,9 @@ body {
   transform: translateX(-50%);
   color: #df454e;
   font-size: 1.5rem; }
+
+h2 {
+  font-size: 2rem; }
 
 .float-right {
   float: right; }
