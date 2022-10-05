@@ -356,7 +356,7 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   width: 114rem;
-  height: 114rem;
+  height: 100vh;
   display: none;
   overflow: hidden; }
   @media (max-width: 800px) {
