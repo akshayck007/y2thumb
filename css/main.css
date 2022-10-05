@@ -357,7 +357,8 @@ h2 {
   transform: translateX(-50%);
   width: 114rem;
   height: 114rem;
-  display: none; }
+  display: none;
+  overflow: hidden; }
   @media (max-width: 800px) {
     .section-download {
       top: 60%;
