@@ -39,5 +39,14 @@ body {
 }
 
 h2 {
+    margin: 4rem 0 1rem 0;
     font-size: 2rem;
+
+    @media (max-width:800px) {
+        margin: 2rem 0 1rem 0;
+    }
+}
+
+p {
+    color: lighten($light-grey, 20%);
 }

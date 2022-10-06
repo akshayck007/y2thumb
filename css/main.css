@@ -31,6 +31,15 @@ body {
   box-sizing: border-box;
   background-color: #414141; }
 
+a:link, a:active, a:-webkit-any-link {
+  color: rgba(255, 255, 255, 0.592157);
+  text-decoration: none; }
+  a:link:hover, a:active:hover, a:-webkit-any-link:hover {
+    color: #fff; }
+
+iframe {
+  margin-bottom: 2rem; }
+
 body {
   font-weight: 400;
   font-family: Lato, sans-serif;
@@ -61,7 +70,14 @@ body {
   font-size: 1.5rem; }
 
 h2 {
+  margin: 4rem 0 1rem 0;
   font-size: 2rem; }
+  @media (max-width: 800px) {
+    h2 {
+      margin: 2rem 0 1rem 0; } }
+
+p {
+  color: rgba(191, 191, 191, 0.592157); }
 
 .float-right {
   float: right; }

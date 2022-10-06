@@ -18,3 +18,22 @@ body {
     box-sizing: border-box;
     background-color: $color-primary;
 }
+
+a {
+
+    &:link,
+    &:active,
+    &:-webkit-any-link {
+        color: lighten($light-grey, 50%);
+        text-decoration: none;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+}
+
+iframe {
+    margin-bottom: 2rem;
+}
